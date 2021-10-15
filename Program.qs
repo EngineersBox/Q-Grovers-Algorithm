@@ -1,4 +1,4 @@
-namespace GroversAlgorithm {
+namespace QGroversAlgorithm {
     open Microsoft.Quantum.Canon;
     open Microsoft.Quantum.Intrinsic;
     open Microsoft.Quantum.Measurement;
@@ -34,9 +34,9 @@ namespace GroversAlgorithm {
 
     }
 
-    operation MarkDivisor (dividend: Int,
-                           divisorRegister: Qubit[],
-                           target: Qubit): Unit is Adj+Ctl {
+    operation MarkDivisor(dividend: Int,
+                          divisorRegister: Qubit[],
+                          target: Qubit): Unit is Adj+Ctl {
         let size = BitSizeI(dividend);
         use (dividendQubits, resultQubits) = (Qubit[size], Qubit[size]);
         let xs = LittleEndian(dividendQubits);
