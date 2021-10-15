@@ -1,2 +1,2 @@
-# Quantum-RNG
-Quantum Random number generator (RNG) with Q# QDK
+# Q\# Grover's Algorithm
+Implementation of Grover's algorithm with Q# QDK
